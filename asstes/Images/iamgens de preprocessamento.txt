@@ -1,0 +1,25 @@
+Aqui estão os tipos de imagens que geralmente se guardariam em assstes/images:
+
+Imagens Originais/Fonte de Alta Resolução:
+
+Versões de alta qualidade ou resoluções maiores das imagens que serão usadas no site. Essas imagens podem ser redimensionadas, comprimidas ou otimizadas para a web durante o processo de build.
+
+Imagens com camadas (ex: PSD, AI) ou formatos não otimizados para web (ex: TIFF, RAW) que servem como "mestre" para gerar as imagens finais.
+
+Imagens para Processamento (Webpack, Gulp, etc.):
+
+Imagens que precisam passar por loaders ou plugins de ferramentas de build (como Webpack, Parcel, Gulp, Vite) para serem otimizadas, ter seus nomes alterados (hash para cache-busting), ou serem convertidas para formatos mais eficientes (ex: WebP).
+
+Sprites de imagens (se você ainda os utiliza), onde várias pequenas imagens são combinadas em uma única para otimização, e depois o CSS é gerado para exibi-las corretamente.
+
+Imagens Usadas em Componentes/Módulos (se o projeto for modular):
+
+Se você estiver usando um framework JavaScript (React, Vue, Angular) ou um sistema de componentes onde as imagens são importadas diretamente para os módulos ou componentes, essas imagens podem residir aqui para serem empacotadas junto com o código JavaScript/CSS relevante.
+
+Imagens de Design/UI Kits (Não diretas para produção):
+
+Mockups, elementos de UI de protótipos ou imagens que fazem parte do processo de design, mas que não necessariamente serão a versão final usada no site.
+
+Favicons e Ícones (Versões Fonte):
+
+As versões originais de favicons e outros ícones do site que serão geradas em múltiplos tamanhos e formatos durante o build.

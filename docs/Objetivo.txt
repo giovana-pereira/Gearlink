@@ -1,0 +1,70 @@
+Linguagens: HTML, CSS, PHP e JS
+Framework: React native
+Banco ed dados: MySQL
+Servidor web local: XAMPP 
+
+
+Ordens para configurar o projeto:
+- Servidor web local:
+1ª configurar o servidor web local
+2ª config do ponto de entrada do php (no public/index.php)
+3ª conectando MySQL ao phpmyadmin
+4ª Preencher o src/boot.php com a inicialização do seu backend
+5ª Definir o esquema do do banco de dados no database/ 
+6ª Opicional, mas é de bom tom adicionar o Gerenciamento de dependencias do php (composer) e os gerendiadpres de pacotes para js (npm e yarn)
+
+Planta baixa (desing banco de dados, ui ok, rotas)
+Fundação (implementação inicial do roteamento e autolog)
+levantar as paredes (códigos)
+
+Objetivo: construir um sistema de gerenciamento de equipamentos semelhante a Dax, que seja responsivo.
+
+- Quando o equipamente não entregue, após 24h o mesmo deve subir ao topo da lista como pendência e permanecer lá até que seja dado baixa por algum técnico
+- 
+
+
+
+
+Banco de dados:
+
+
+Usuarios: ID, matricula, nome, turno, setor, cargo, foto, senhaAcesso (ao gearLink), dtCads, ativo
+Email: IDusuario,  matriculaUsario, nomeUsario, turnoUsario, setorUsario, cargoUsario, fotoUsarios, email, emailSenha
+
+Equipamentos: ID, tipo, marca, modelo, nuemro de serie, nome
+- Coletor, Radios, Impressoras Zebra, Impressora HP(laser) 
+Nas impressoras é preciso saber o lugar onde se encontam
+
+
+Coletor: ID, nome(numero), tipologia, marca, modelo, numero de serie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

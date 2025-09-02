@@ -1,0 +1,126 @@
+/*  Nesta pagina será realizada as estilizações de responsividade de todas as paginas publicas do projeto. As informações deta pagina serão carregadas após o style.css apenas quando estas consdições forem necessarias. 
+
+ Tamamho médio de cada item:
+- Dispositivos Móveis (Mobile): Menos de 576px.
+- Tablets (Tablet): Entre 576px e 991px.
+- Desktops e Laptops (Desktop/Laptop): Entre 992px e 1199px.  */
+
+
+/* Responsividade do Layout Principal (Sidebar) */
+
+
+body.expandir .main-responsivo {
+    margin-left: 250px;
+    width: calc(100% - 250px); /* Use 100% do contêiner flex, não 100vw */
+}
+
+body.expandir #sidebar{
+    width: 250px;
+
+}
+
+body.expandir .main-responsivo {
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+}
+
+body.expandir .identify-page{
+    margin-left: 90px;
+    width: calc(100vw - 250px);
+    gap: 300px;
+    transition: margin-left 0.6s ease, width 0.6s ease;
+}
+
+body.expandir .search-form{
+    transition: margin-right 1s ease, width 1s ease;
+    margin-right: 100px;
+
+}
+
+
+
+
+
+
+
+/* <-------------------> 
+ /* Responsividade para Tablets e Dispositvos Mentores (até 1395) 
+
+@media (max-width: 1395px){
+     /* Tela de Perfil 
+     .identify-page{
+        margin-left: 90px;
+        width: calc(100vw - 250px);
+        gap: 300px;
+        transition: margin-left 0.6s ease, width 0.6s ease;
+    }
+
+    .search-form{
+        transition: margin-right 1s ease, width 1s ease;
+        margin-right: 100px;
+
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px auto;
+        max-width: 1100px;
+        align-items: flex-start;
+        gap: 60px;
+        flex-wrap: wrap;
+
+    }
+
+    body.expandir .container-photo{
+        min-width: 260px;
+        min-height: 290px;
+
+        max-width: 360px;
+        max-height: 690px;
+    }
+
+    
+    body.expandir .container-photo img{
+        max-width: 190px;
+
+    }
+
+    .container-photo{
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+    }
+
+    .container-dados-perfil{
+        max-width: 360px;
+    }
+
+    body.expandir .btn-acao-perfil{
+        padding: 8px 10px;
+        width: 70%;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--orange);
+        color: var(--text-white-color);
+        font-weight: 500;
+        margin: 20px;
+        text-align: center;
+        align-items: center;
+}
+
+    body.expandir .container-dados-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+        flex-grow: 2;
+        min-width: 500px;
+    }
+
+}  */
+
+
+

@@ -1,0 +1,1 @@
+ # Arquivos PHP que processam requisições HTTP

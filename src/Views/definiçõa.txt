@@ -1,0 +1,1 @@
+ # Templates PHP ou arquivos HTML que são RENDERIZADOS pelo PHP

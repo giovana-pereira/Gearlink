@@ -1,0 +1,273 @@
+/* Nesta pagina será realizada as estilizações gerais de todas as paginaspublas do projetol. */ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --bg-color: #EFF1FF;
+    --white: #fff;
+    --text-white-color: #f0f0f0;
+    --dark-blue: #121739;
+    --light-blue: #E4E8FF;
+    --less-drak-blue: #171F5B;
+    --bg-light-blue: #171D4A;
+    --orange: #E07635;
+    --light-orange: #FFCAA9;
+    --dark-orange:  #D35303;
+    --light-grey: #7C7C7C;
+    --black: #080808;
+}
+
+*{
+    background-color: var(--bg-color);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh; /* Ocupa a altura total da tela */
+}
+
+/* INICIO SIDEBAR */
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    width: 80px; /* Largura inicial recolhida */
+    height: 100vh; /* Ajustado para 100vh para ocupar a altura total da viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 40px 0 20px 0;
+    transition: width 0.4s ease; /* Transição suave para a largura */
+    justify-content: space-between; /* Alinha logo no topo e menu inferior no final */
+}
+
+.sidebar-container.expandir { /* Classe adicionada/removida por JS */
+    width: 250px; /* Largura expandida */
+}
+
+.sidebar-logo {
+    background-color: transparent;
+    text-align: center; /* Centraliza o conteúdo do logo */
+    padding-bottom: 20px; /* Espaçamento abaixo do logo */
+}
+
+.sidebar-logo img {
+    display: block;
+    width: 50%; /* Ajuste a largura da imagem do símbolo */
+    max-width: 100px;
+    margin: 0 auto; /* Centraliza a imagem */
+    background-color: transparent;
+}
+
+.sidebar-logo img.logo { /* Logo com o nome "Gearlink" */
+    display: none; /* Escondido por padrão */
+    width: 80%; /* Ajuste a largura do logo com nome */
+    max-width: 140px;
+    margin-top: 10px;
+}
+
+.sidebar-container.expandir .sidebar-logo img.logo {
+    display: block; /* Mostra o logo com nome quando expandido */
+}
+
+.sidebar-logo hr{
+    height: 1px;
+    width: 80%;
+    border: none;
+    margin: 20px auto; /* Espaçamento da linha divisória */
+    background-color: var(--less-drak-blue);
+}
+
+#sidebar nav{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0 10px;
+    height: 100%; /* Ocupa a altura restante */
+    overflow-y: hidden; 
+    justify-content: space-between; /* Para separar os dois ULs (menu principal e inferior) */
+}
+
+#sidebar nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove margens padrão do UL */
+    background-color: transparent;
+}
+
+.sidebar-menu-item {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px; /* Espaçamento entre os itens do menu */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição para hover e ativo */
+}
+
+.sidebar-menu-item a {
+    display: flex; /* Transforma o link em flex para alinhar ícone e texto */
+    align-items: center;
+    gap: 15px; /* Espaço entre ícone e texto */
+    padding: 10px 15px; /* Padding interno do item */
+    text-decoration: none;
+    color: var(--text-white-color); /* Cor do texto padrão */
+    background-color: transparent;
+    width: 100%; /* Garante que o link ocupe toda a largura do LI */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    overflow: hidden; /* Oculta qualquer conteúdo que transborde */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
+
+.sidebar-menu-item .icon {
+    display: flex; /* Garante que o span do ícone seja flex para centralizar o ícone */
+    justify-content: center;
+    align-items: center;
+    width: 24px; /* Largura fixa para o ícone */
+    min-width: 24px; /* Garante que o ícone não encolha */
+    height: 24px; /* Altura fixa para o ícone */
+    background-color: transparent;
+}
+
+.sidebar-menu-item iconify-icon {
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: var(--text-white-color); /* Cor do ícone padrão */
+    transition: color 0.3s ease; /* Transição suave para a cor do ícone */
+}
+
+.sidebar-menu-item .txt-link {
+    background-color: transparent;
+    color: var(--text-white-color); /* Cor do texto padrão */
+    font-size: 0.9rem;
+    opacity: 0; /* Escondido por padrão no modo recolhido */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade do texto */
+}
+
+.sidebar-container.expandir .sidebar-menu-item .txt-link {
+    opacity: 1; /* Mostra o texto quando expandido */
+}
+
+/* Estilos de HOVER */
+.sidebar-menu-item:hover {
+    background-color: var(--bg-light-blue); /* Fundo no hover */
+}
+
+.sidebar-menu-item:hover .txt-link,
+.sidebar-menu-item:hover iconify-icon {
+    color: var(--orange); /* Cor do texto e ícone no hover */
+}
+
+/* Estilos para ITEM ATIVO (selecionado) */
+.sidebar-menu-item.ativo {
+    background-color: var(--bg-light-blue); /* Fundo para item ativo */
+}
+
+.sidebar-menu-item.ativo .txt-link,
+.sidebar-menu-item.ativo iconify-icon {
+    color: var(--orange); /* Cor do texto e ícone para item ativo */
+}
+
+/* Estilos específicos para o botão de toggle */
+.sidebar-menu-item.toggle-button {
+    margin-top: 20px; /* Espaçamento superior para o botão de toggle */
+    margin-bottom: 20px;
+}
+
+.sidebar-menu-item.toggle-button iconify-icon {
+    transform: rotate(0deg); /* Padrão para seta apontando para a direita */
+    transition: transform 0.3s ease;
+}
+
+.sidebar-container.expandir .sidebar-menu-item.toggle-button iconify-icon {
+    transform: rotate(180deg); /* Gira a seta quando expandido para apontar para a esquerda */
+}
+
+/* Oculta o texto "Exibir menu" quando o sidebar está recolhido */
+.sidebar-container:not(.expandir) .sidebar-menu-item.toggle-button .txt-link {
+    opacity: 0;
+    width: 0; /* Ajuda a ocultar o texto completamente */
+    overflow: hidden;
+}
+
+/* Garante que o texto "Ocultar menu" apareça quando expandido */
+.sidebar-container.expandir .sidebar-menu-item.toggle-button .txt-link {
+    opacity: 1;
+    width: auto;
+}
+/* FIM SIDEBAR */
+
+/* INICIO PAGINA TESTE - RESPONSIVIDADE */ 
+body.expandir #sidebar {
+    width: 250px;
+}
+
+/* MAIN: Adaptação com base na largura da sidebar */
+.main-responsivo {
+    flex-grow: 1;
+    margin-left: 80px; 
+    transition: margin-left 0.4s ease, width 0.4s ease;
+    min-height: 100vh;
+    /* A largura agora se adapta automaticamente com flexbox, mas
+       se você quiser um espaçamento extra de 20px, use calc(). */
+    width: calc(100vw - 80px);
+    padding: 20px; /* Seu padding original */
+
+}
+
+body.expandir .main-responsivo {
+    /* Ajuste a margem e largura para o novo tamanho da sidebar */
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+}
+
+
+/* PAGINA DE TESTE CONFIG */
+.container-responsivo{
+    display: flex;
+    flex-direction: column;  
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tst-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-cont{
+    text-align: justify;
+    margin: 8px;
+    padding: 8px;
+}
+
+.menu-superior{
+    background-color: #171F5B;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.itens-menu{
+    background-color: #E07635;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+
+}
+
+

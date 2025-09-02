@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+
+    <title>Controle</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+    <script src="assets/js/main.js" async></script>
+</head>
+<body>
+<section class="sidebar"></section>
+
+<section class="cabecalho">
+
+    <div class="identify-page">
+        <h3 class="page-tittle">Controle de Coletores</h3>
+        <form class="search-form" action="/search" method="get">
+            <div class="search-container">
+                <button type="submit" class="search-button"><iconify-icon icon="eva:search-outline"  alt="icone-perfil"></iconify-icon></button>
+                <input type="text" class="search-input" name="query" placeholder="Pesquisar..." aria-label="Pesquisar">
+            </div>
+        </form>
+    </div>
+
+    <div class="menu-superior-controle">
+        <div class="conteiner-menu-superior-controle">
+            <button class="btn-menu filter">
+                <iconify-icon icon="fluent:temperature-16-regular"  alt="icone-filter"></iconify-icon>
+            </button>
+
+            <div class="contadores-menu">
+                <div class="contador">
+                    <p class="tittleContador">Em uso</p>
+                    <div class="indicadorContador">
+                        <p class="lineContador verde"> | </p>
+                        <p class="displayContador"> 00 </p>
+                    </div>
+                </div> 
+
+                <div class="contador">
+                    <p class="tittleContador">No armário</p>
+                    <div class="indicadorContador">
+                        <p class="lineContador azul"> | </p>
+                        <p class="displayContador"> 00 </p>
+                    </div>
+                </div> 
+
+                <div class="contador">
+                    <p class="tittleContador">Pendente</p>
+                    <div class="indicadorContador">
+                        <p class="lineContador roxo"> | </p>
+                        <p class="displayContador"> 00 </p>
+                    </div>
+                </div> 
+
+                <div class="contador">
+                    <p class="tittleContador">Em manuteção</p>
+                    <div class="indicadorContador">
+                        <p class="lineContador amarelo"> | </p>
+                        <p class="displayContador"> 00 </p>
+                    </div>
+                </div> 
+
+                <div class="contador">
+                    <p class="tittleContador">Perdido</p>
+                    <div class="indicadorContador">
+                        <p class="lineContador vermelho"> | </p>
+                        <p class="displayContador"> 00 </p>
+                    </div>
+                </div>                 
+            </div>
+
+            <div class="buttons-acao">
+                <button class="btn-entrega btn-menu"> <iconify-icon icon="carbon:ibm-cloud-continuous-delivery"  alt="icone-delivery"></iconify-icon></button>
+                <button class="btn-devolucao btn-menu"> <iconify-icon icon="icon-park-outline:return"  alt="icone-return"></iconify-icon></button>
+                <button class="btn-exporta btn-menu"><span> Exportar </span><iconify-icon icon="eva:arrow-up-fill"  class="arrow" alt="icone-export"></iconify-icon></span></button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="controle">
+    <table class="table-controle">
+         <thead>
+            <tr>
+                <th>  </th>
+                <th>Matrícula <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Nome <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Coletor <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Cargo <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Turno <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Entrega <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Tec. Ent. <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Devolução <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Tec. Dev. <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+                <th>Situação <iconify-icon icon="eva:arrow-up-fill" class="filter" alt="icone-export"></iconify-icon></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+            <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                        <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+                                <tr>
+                <td><img src="assets/images/user.png" alt="foto-colaborador"></td>
+                <td>12345</td>
+                <td>Nome Sobrenome Completo completissimo</td>
+                <td>001</td>
+                <td>Função exercida</td>
+                <td>1º</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>01/01/01 00:00:00</td>
+                <td>Nome Técnico</td>
+                <td>Em uso</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div id="paginacao">
+        <iconify-icon icon="weui:arrow-outlined" class="arrow-left" width="12" height="24" style="transform: rotate(180deg);" ></iconify-icon>
+        <div class="paginacao-number">
+            <p class="paginacao-number">1</p>
+            <p class="paginacao-number">2</p>
+            <p class="paginacao-number pg-ativo">3</p>
+            <p class="paginacao-number">4</p>
+            <p class="paginacao-number">5</p>
+            <p class="paginacao-number">...</p>
+            <p class="paginacao-number">10</p>
+        </div>
+        <iconify-icon icon="weui:arrow-outlined" class="arrow-right" width="12" height="24"></iconify-icon>
+    </div>
+</section>
+
+    
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<script src="assets/js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    
+    <title>Home sidebar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="sidebar">
+        <div class="sidebar-container">
+            <div class="sidebar-logo">
+                <img src="logo.png" alt="simbolo logo" width="100px">
+                <img src="gearlink-logo.png" alt="nome logo" class="logo">
+                <hr>
+            </div>
+            <nav class="sidebar-menu">
+                <ul class="menu">
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="radix-icons:dashboard" alt="icone-dashboard"></iconify-icon></span>
+                            <span class="txt-link">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="gg:controller" alt="icone-controle"></iconify-icon></span>
+                            <span class="txt-link">Controle</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="mynaui:plus-square" alt="icone-cadastro"></iconify-icon></span>
+                            <span class="txt-link">Cadastrar</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="fluent:window-bullet-list-20-regular" alt="icone-status"></iconify-icon></span>
+                            <span class="txt-link">Status</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="solar:user-outline" alt="icone-perfil"></iconify-icon></span>
+                            <span class="txt-link">Meu Perfil</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-bottom">
+                    <!-- Botão para expandir/recolher o menu (será controlado por JS) -->
+                    <li class="sidebar-menu-item toggle-button">
+                        <a href="#" class="conteudo-icone" id="sidebarToggle">
+                            <span class="icon"><iconify-icon icon="material-symbols-light:keyboard-double-arrow-right-rounded" alt="icone-mostrar-mais"></iconify-icon></span>
+                            <span class="txt-link">Ocultar menu</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="mdi-light:settings" alt="icone-configuracoes"></iconify-icon></span>
+                            <span class="txt-link">Configurações</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="conteudo-icone">
+                            <span class="icon"><iconify-icon icon="mynaui:logout" alt="icone-sair"></iconify-icon></span>
+                            <span class="txt-link">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<script src="menu.js"></script>
+
+</body>
+</html>
