@@ -1,7 +1,7 @@
-![Logo](assets/Images/Logo.png "Logo do sistema")
+![Logo](asstes/Images/Logo.png "Logo do sistema")
 # Gearlink
 
-Desenvolvi um sistema completo de gerenciamento destinado a otimizar as rotinas de equipes de TI, focando na gestão de equipamentos, contas de e-mail e usuários corporativos. A concepção deste projeto foi inspirada em um sistema observado em uma empresa onde prestei serviços. Esta aplicação aprimorou significativamente minhas habilidades em design responsivo, principalmente, UX/UI Design e desenvolvimento full-stack (front-end e back-end).
+Estou desenvolvendo um sistema completo de gerenciamento destinado a otimizar as rotinas de equipes de TI, focando na gestão de equipamentos, contas de e-mail e usuários corporativos. A concepção deste projeto foi inspirada em um sistema observado em uma empresa onde prestei serviços. Esta aplicação aprimorou significativamente minhas habilidades em design responsivo, principalmente, UX/UI Design e desenvolvimento full-stack (front-end e back-end).
 
 
 ## Funcionalidades
